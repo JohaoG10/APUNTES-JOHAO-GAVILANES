@@ -1,22 +1,42 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:models="clr-namespace:Notes.Models"
-             x:Class="Notes.Views.AboutPage">
-    <ContentPage.BindingContext>
-        <models:About />
-    </ContentPage.BindingContext>
-    <VerticalStackLayout Spacing="10" Margin="10">
-        <HorizontalStackLayout Spacing="10">
-            <Image Source="dotnet_bot.png"
-                   SemanticProperties.Description="The dot net bot waving hello!"
-                   HeightRequest="64" />
-            <Label FontSize="22" FontAttributes="Bold" Text="{Binding Title}" VerticalOptions="End" />
-            <Label FontSize="22" Text="{Binding Version}" VerticalOptions="End" />
-        </HorizontalStackLayout>
+             x:Class="Notes.Views.AboutPage"
+             Title="About Me">
+    <VerticalStackLayout Spacing="20" Padding="20" VerticalOptions="Center">
+       
+        <Image Source="losgoatjuntos.jpg"
+               SemanticProperties.Description="eL GOAT y dos mas"
+               HeightRequest="100"
+               WidthRequest="100"
+               HorizontalOptions="Center" />
 
-        <Label Text="{Binding Message}" />
-        <Button Text="Learn more..." Clicked="LearnMore_Clicked" />
+        <Image Source="elotrogoat.jpg"
+                   SemanticProperties.Description="el goat de la F1"
+                   HeightRequest="100"
+                   WidthRequest="100" />
+
+
+        <Image Source="chilldecojones"
+                   SemanticProperties.Description="soy un tipo tranquilo y estoy chill de cojones"
+                   HeightRequest="100"
+                   WidthRequest="100" />
+
+        <Label Text="Johao Gavilanes"
+               FontSize="24"
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
+
+       
+        <Label Text="Soy Johao Gavilanes, tengo 22 años actualmente. Me gusta mucho programar y practicar deportes como fútbol, basketball, motocross, entre otros. Espero convertirme en un gran ingeniero que haga cambios que queden marcados en nuestra sociedad."
+               FontSize="16"
+               LineHeight="1.5"
+               HorizontalTextAlignment="Center" />
+
+        <Button Text="Conocer más sobre mí"
+                Clicked="LearnMore_Clicked"
+                BackgroundColor="#007ACC"
+                TextColor="White"
+                HorizontalOptions="Center" />
     </VerticalStackLayout>
-
 </ContentPage>
