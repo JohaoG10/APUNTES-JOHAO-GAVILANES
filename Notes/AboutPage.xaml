@@ -4,35 +4,39 @@
              x:Class="Notes.Views.AboutPage"
              Title="About Me">
     <VerticalStackLayout Spacing="20" Padding="20" VerticalOptions="Center">
-       
-        <Image Source="losgoatjuntos.jpg"
-               SemanticProperties.Description="eL GOAT y dos mas"
-               HeightRequest="100"
-               WidthRequest="100"
-               HorizontalOptions="Center" />
 
-        <Image Source="elotrogoat.jpg"
-                   SemanticProperties.Description="el goat de la F1"
-                   HeightRequest="100"
-                   WidthRequest="100" />
+        <HorizontalStackLayout Spacing="15" HorizontalOptions="Center">
+           
+            <Image Source="losgoatjuntos.jpg"
+                   SemanticProperties.Description="El GOAT y dos más"
+                   HeightRequest="300"
+                   WidthRequest="300" />
 
+          
+            <Image Source="elotrogoat.jpg"
+                   SemanticProperties.Description="El GOAT de la F1"
+                   HeightRequest="300"
+                   WidthRequest="300" />
 
-        <Image Source="chilldecojones"
-                   SemanticProperties.Description="soy un tipo tranquilo y estoy chill de cojones"
-                   HeightRequest="100"
-                   WidthRequest="100" />
+           
+            <Image Source="chilldecojones.jpg"
+                   SemanticProperties.Description="Soy un tipo tranquilo y estoy chill de cojones"
+                   HeightRequest="300"
+                   WidthRequest="300" />
+        </HorizontalStackLayout>
 
         <Label Text="Johao Gavilanes"
                FontSize="24"
                FontAttributes="Bold"
                HorizontalOptions="Center" />
 
-       
+        
         <Label Text="Soy Johao Gavilanes, tengo 22 años actualmente. Me gusta mucho programar y practicar deportes como fútbol, basketball, motocross, entre otros. Espero convertirme en un gran ingeniero que haga cambios que queden marcados en nuestra sociedad."
                FontSize="16"
                LineHeight="1.5"
                HorizontalTextAlignment="Center" />
 
+        
         <Button Text="Conocer más sobre mí"
                 Clicked="LearnMore_Clicked"
                 BackgroundColor="#007ACC"
