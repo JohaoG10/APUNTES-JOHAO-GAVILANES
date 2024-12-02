@@ -37,7 +37,7 @@
                HorizontalTextAlignment="Center" />
 
         
-        <Button Text="Conocer más sobre mí"
+        <Button Text="chill de cojones"
                 Clicked="LearnMore_Clicked"
                 BackgroundColor="#007ACC"
                 TextColor="White"
