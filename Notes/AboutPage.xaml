@@ -1,24 +1,29 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:Notes.ViewModels"
              x:Class="Notes.Views.AboutPage"
              Title="About Me">
+
+    <ContentPage.BindingContext>
+        <viewModels:AboutViewModel />
+    </ContentPage.BindingContext>
     <VerticalStackLayout Spacing="20" Padding="20" VerticalOptions="Center">
 
         <HorizontalStackLayout Spacing="15" HorizontalOptions="Center">
-           
+
             <Image Source="losgoatjuntos.jpg"
                    SemanticProperties.Description="El GOAT y dos más"
                    HeightRequest="300"
                    WidthRequest="300" />
 
-          
+
             <Image Source="elotrogoat.jpg"
                    SemanticProperties.Description="El GOAT de la F1"
                    HeightRequest="300"
                    WidthRequest="300" />
 
-           
+
             <Image Source="chilldecojones.jpg"
                    SemanticProperties.Description="Soy un tipo tranquilo y estoy chill de cojones"
                    HeightRequest="300"
@@ -30,17 +35,19 @@
                FontAttributes="Bold"
                HorizontalOptions="Center" />
 
-        
+
         <Label Text="Soy Johao Gavilanes, tengo 22 años actualmente. Me gusta mucho programar y practicar deportes como fútbol, basketball, motocross, entre otros. Espero convertirme en un gran ingeniero que haga cambios que queden marcados en nuestra sociedad."
                FontSize="16"
                LineHeight="1.5"
                HorizontalTextAlignment="Center" />
 
-        
+
         <Button Text="chill de cojones"
-                Clicked="LearnMore_Clicked"
                 BackgroundColor="#007ACC"
                 TextColor="White"
                 HorizontalOptions="Center" />
+
+        
+
     </VerticalStackLayout>
 </ContentPage>
