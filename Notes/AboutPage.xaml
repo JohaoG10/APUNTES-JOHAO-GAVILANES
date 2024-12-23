@@ -8,6 +8,7 @@
     <ContentPage.BindingContext>
         <viewModels:AboutViewModel />
     </ContentPage.BindingContext>
+
     <VerticalStackLayout Spacing="20" Padding="20" VerticalOptions="Center">
 
         <HorizontalStackLayout Spacing="15" HorizontalOptions="Center">
@@ -47,7 +48,8 @@
                 TextColor="White"
                 HorizontalOptions="Center" />
 
-        
+        <Label Text="{Binding Message}" />
+        <Button Text="Learn more..." Command="{Binding ShowMoreInfoCommand}" />
 
     </VerticalStackLayout>
 </ContentPage>
